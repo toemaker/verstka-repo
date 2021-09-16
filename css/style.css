@@ -168,7 +168,8 @@ body {
   left: 0;
   right: 0;
   height: 420px;
-  background-color: #3A3838;
+  width: 100%;
+  background: rgba(58, 56, 56, 0.86);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,13 +178,20 @@ body {
 }
 
 .product-item:hover .overlay {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .product-btn {
   display: flex;
-  background-color: #3A3838;
+  background-color: transparent;
   border: 1px solid #FFFFFF;
+  width: 139px;
+  height: 44px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 0;
 }
 
 .product-btn-cart {
@@ -201,6 +209,7 @@ body {
 .product-pic {
   width: 360px;
   height: 420px;
+  display: block;
 }
 
 .product-item-margin {
@@ -208,14 +217,17 @@ body {
 }
 
 .product-item-header {
+  text-decoration: none;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
+}
+
+.product-item-header-margin {
   padding-left: 16px;
   padding-right: 29px;
   margin-top: 25px;
   margin-bottom: 12px;
-  text-decoration: none;
 }
 
 .product-item-text {
@@ -637,6 +649,7 @@ body {
 .carousel-slide {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 62px;
 }
 
 .carousel-control-prev {
@@ -655,12 +668,17 @@ body {
   border: none;
 }
 
+.fas {
+  font-size: 17px;
+}
+.fas:hover {
+  color: #F16D7F;
+}
+
 /* Секция продукта на странице продукта */
-.product-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.wrap-product-block {
+  margin-top: -62px;
+  position: relative;
   border: 1px solid rgba(42, 42, 42, 0.15);
 }
 
@@ -670,7 +688,7 @@ body {
   line-height: 17px;
   color: #F16D7F;
   padding-bottom: 12px;
-  border-bottom: 3px solid #F16D7F;
+  text-align: center;
 }
 
 .product-block-header {
@@ -678,6 +696,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #4D4D4D;
+  text-align: center;
 }
 
 .product-block-text {
@@ -687,6 +706,7 @@ body {
   text-align: center;
   color: #5E5E5E;
   width: 555px;
+  text-align: center;
 }
 
 .product-block-cost {
@@ -694,6 +714,7 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #EF5B70;
+  text-align: center;
 }
 
 .sort-padding {
