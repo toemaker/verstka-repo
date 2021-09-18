@@ -1,6 +1,12 @@
 
 $shift: 62px;
 
+@mixin textstd {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
 body   {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -128,6 +134,9 @@ body   {
     margin-top: 96px;
 }
 
+.products-wrap-margin   {
+    margin-top: 0;
+}
 .products-catalog-wrap  {
     margin-top: 51px;    
 }
@@ -145,8 +154,7 @@ body   {
 
 .product-paragraph  {
     margin: 0 auto;   
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #9F9F9F;
 }
 
@@ -157,6 +165,16 @@ body   {
     flex-wrap: wrap;
     padding: 0;
     margin-top: 48px;
+    margin-bottom: 0;
+}
+
+.product-cards-margin   {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -195,28 +213,31 @@ body   {
     height: 44px;
     // justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #FFFFFF;
     padding: 0;
 
-    // &:hover {
-    //     background-color: #FFFFFF;
-    //     color: #000000;
-    // }
+    &:hover {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
 }
 
-.product-btn-cart   {
+.product-btn:hover .product-btn-icon    {
+    fill: #000000;
+}
+
+.product-btn-icon   {
+    fill: #FFFFFF;
     padding: 11px 11px 8px 13px;
 }
 
 .product-btn-text   {
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #FFFFFF;
-     padding-top: 14px;
+    padding-top: 14px;
     padding-right: 16px;
-    
+   
 }
 
 .product-pic    {
@@ -247,8 +268,7 @@ display: block;
     padding-left: 16px;
     padding-right: 29px;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #5D5D5D;
     margin: 0;
 }
@@ -330,8 +350,7 @@ display: block;
 
 .advantage-paragraph    {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     text-align: center;
     color: #FBFBFB;
     width: 360px;
@@ -390,8 +409,7 @@ height: 448px;
 
 .subscribe-field::placeholder {
     color: #222224;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     opacity: 0.67;
 }
 
@@ -402,8 +420,7 @@ height: 448px;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
     color: #FFFFFF;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
 }
 
 .form-header    {
@@ -490,8 +507,7 @@ height: 448px;
 .breadcrumb-item    {
     text-decoration: none;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #636363;
     display: inline-block;
 
@@ -502,8 +518,7 @@ height: 448px;
 
 .breadcrumb-item-active {
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #F16D7F;
     display: inline-block;
 }
@@ -526,8 +541,7 @@ height: 448px;
     width: 360px;
     position: relative;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
 
     &-title {
         display: block;
@@ -535,11 +549,11 @@ height: 448px;
     }
 
     &-drop  {
-        padding: 10px;
+        padding-left: 10px;
         position: absolute;
         z-index: 10;
         background-color: #FFFFFF;
-        width: 360px;
+        width: 350px;
     }
 
     &[open] {
@@ -552,8 +566,7 @@ height: 448px;
 }
 
 .filter-item    {
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #6F6E6E;
 
     &-title  {
@@ -567,6 +580,7 @@ height: 448px;
         z-index: 10;
         background-color: #FFFFFF;
         padding: 0 17px;
+        
     }
 
     &-title-list  {
@@ -581,8 +595,7 @@ height: 448px;
 } 
 
 .sort-button    {
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #6F6E6E;
     position: relative;
 
@@ -611,8 +624,7 @@ height: 448px;
 }
 
 .sort   {
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #6F6E6E;
     display: flex;
     margin-left: 30px;
@@ -698,27 +710,27 @@ height: 448px;
 }
 
 /* Секция продукта на странице продукта */
-// .product-block  {
-    
-// }
+
 
 .wrap-product-block {
     margin-top: -$shift;
     position: relative;
     border: 1px solid rgba(42, 42, 42, 0.15);
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+    background-color: #FFFFFF;
 }
 
-.product-block-women    {
+.product-block-women  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.product-block-women-header    {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #F16D7F;
-    padding-bottom: 12px;
-    // border-bottom: 3px solid #F16D7F;
+    margin-bottom: 11px;
     text-align: center;
 }
 
@@ -728,16 +740,22 @@ height: 448px;
     line-height: 22px;
     color: #4D4D4D;
     text-align: center;
+    margin: 0;
+}
+
+.product-block-center-text  {
+    display: flex;
+    justify-content: center;
 }
 
 .product-block-text {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     text-align: center;
     color: #5E5E5E;
     width: 555px;
-    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 32px;
 }
 
 .product-block-cost {
@@ -748,9 +766,12 @@ height: 448px;
     text-align: center;
 }
 
+.product-block-sort {
+    display: flex;
+    justify-content: center;
+}
 .sort-padding   {
-    font-size: 14px;
-    line-height: 17px;
+    @include textstd;
     color: #6F6E6E;
 }
 
@@ -758,22 +779,33 @@ height: 448px;
     margin: 128px 0;
 }
 
-.product-block-link   {
+.product-block-link-center  {
     display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 66px;
+}
+
+.product-btn-pink   {
     background-color: #FFFFFF;
+    width: 212px;
+    height: 48px;
     border: 1px solid #F26376;
-    text-decoration: none;
+    @include textstd;
+    color: #F26376;
+    align-items: center;
+    display: flex;
+   
+        &:hover {
+        background-color: #F26376;
+        color: #FFFFFF;
+    }
 }
 
-.product-block-btn-cart   {
-    padding: 11px 11px 8px 13px;
-    color: #F26376;
+.product-btn-pink-icon  {
+    fill: #F26376;
+    padding: 15px 23px 9px 24px;
 }
-
-.product-block-btn-text  {
-    font-size: 14px;
-    line-height: 17px;
-    color: #F26376;
-    padding-top: 14px;
-    padding-right: 16px;
+.product-btn-pink:hover .product-btn-pink-icon   {
+    fill: #FFFFFF;
 }
