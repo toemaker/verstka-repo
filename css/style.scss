@@ -103,6 +103,11 @@ body   {
     line-height: 19px;
     color: #FFFFFF;
 
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
     &-women  {
         background-image: url("../img/for_women.jpg");
     }
@@ -184,6 +189,11 @@ body   {
     background-color: #F8F8F8;
     position: relative;
     transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .overlay {
@@ -203,6 +213,7 @@ body   {
 
 .product-item:hover .overlay {
     opacity: 1;
+    transition: 0.5s;
 }
 
 .product-btn    {
@@ -220,11 +231,13 @@ body   {
     &:hover {
         background-color: #FFFFFF;
         color: #000000;
+        transition: 0.5s;
     }
 }
 
 .product-btn:hover .product-btn-icon    {
     fill: #000000;
+    transition: 0.5s;
 }
 
 .product-btn-icon   {
@@ -303,6 +316,7 @@ display: block;
     &:hover {
         color: #FFFFFF;
         background-color: #F26376;
+        transition: 0.5s;
     }
 }
 
@@ -322,6 +336,11 @@ display: block;
     background-position: center top;
     height: 134px;
     margin: 133px  0;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .advantage-sales    {
@@ -330,6 +349,11 @@ display: block;
     background-position: center top;
     height: 134px;
     margin: 133px  0;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .advantage-quality {
@@ -338,6 +362,11 @@ display: block;
     background-position: center top;
     height: 134px;
     margin: 133px  0;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .advantage-header   {
@@ -367,10 +396,16 @@ height: 448px;
     display: flex;
     justify-content: space-between;
     }
+
 }
 
 .woman-feedback {
     margin: 97px    0   126px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .feedback-photo {
@@ -391,6 +426,11 @@ height: 448px;
     width: 557px;  
     align-items: flex-end; 
     padding-right: 0;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .subscribe {
@@ -460,6 +500,11 @@ height: 448px;
 .socail  {
     margin: 24px    0;
     display: flex;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .socail-link    {
@@ -477,6 +522,7 @@ height: 448px;
     &:hover    {
         color: #FFFFFF;
         background-color: #F16D7F;
+        transition: 0.5s;
     }
     
 }
@@ -529,14 +575,6 @@ height: 448px;
     margin-bottom: 64px;
 }
 
-// .filtr  {
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 17px;
-//     color: #000000;
-//     margin-right: 290px;
-// }
-
 .filter {
     width: 360px;
     position: relative;
@@ -563,6 +601,7 @@ height: 448px;
     &[open] .filter-title {
         color: #EF5B70;
     }
+
 }
 
 .filter-item    {
@@ -587,10 +626,20 @@ height: 448px;
         list-style-type: none;
         color: #6F6E6E;
         gap: 11px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
     }
 
     &[open] .filter-item-title {
         color: #EF5B70;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
     }
 } 
 
@@ -607,6 +656,7 @@ height: 448px;
     &[open] {
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
+
 }
 
 .size-drop  {
@@ -645,6 +695,19 @@ height: 448px;
     font-size: 16px;
     line-height: 19px;
     margin: 48px 0 96px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
+.page-item  {
+
+    &:hover {
+        transform: scale(1.5);
+        transition: 0.5s;
+    }
 }
 .page-link  {
     text-decoration: none;
@@ -685,12 +748,29 @@ height: 448px;
     padding-bottom: $shift;
 }
 
+.carousel-item  {
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
 .carousel-control-prev  {
     width: 47px;
     height: 47px;
     align-self: center;
     background: rgba(42, 42, 42, 0.15);
     border: none;
+
+    &:hover {
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+}
+
+.carousel-control-prev:hover .fas {
+    transition: 0.5s;
+    color: #F16D7F;
 }
 
 .carousel-control-next  {
@@ -699,24 +779,35 @@ height: 448px;
     align-self: center;
     background: rgba(42, 42, 42, 0.15);
     border: none;
-}
-
-.fas    {
-    font-size: 17px;
 
     &:hover {
-        color: #F16D7F;
+        transform: rotate(360deg);
+        transition: 0.5s;
     }
 }
 
-/* Секция продукта на странице продукта */
+.carousel-control-next:hover .fas {
+    transition: 0.5s;
+    color: #F16D7F;
+}
 
+
+.fas    {
+    font-size: 17px;
+}
+
+/* Секция продукта на странице продукта */
 
 .wrap-product-block {
     margin-top: -$shift;
     position: relative;
     border: 1px solid rgba(42, 42, 42, 0.15);
     background-color: #FFFFFF;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .product-block-women  {
@@ -725,6 +816,11 @@ height: 448px;
     align-items: center;
     flex-direction: column;
     margin-bottom: 12px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 .product-block-women-header    {
     font-weight: 300;
@@ -741,6 +837,11 @@ height: 448px;
     color: #4D4D4D;
     text-align: center;
     margin: 0;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .product-block-center-text  {
@@ -756,6 +857,11 @@ height: 448px;
     width: 555px;
     margin-top: 48px;
     margin-bottom: 32px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .product-block-cost {
@@ -764,11 +870,21 @@ height: 448px;
     line-height: 29px;
     color: #EF5B70;
     text-align: center;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .product-block-sort {
     display: flex;
     justify-content: center;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 .sort-padding   {
     @include textstd;
@@ -799,6 +915,7 @@ height: 448px;
         &:hover {
         background-color: #F26376;
         color: #FFFFFF;
+        transition: 0.5s;
     }
 }
 
@@ -808,4 +925,5 @@ height: 448px;
 }
 .product-btn-pink:hover .product-btn-pink-icon   {
     fill: #FFFFFF;
+    transition: 0.5s;
 }

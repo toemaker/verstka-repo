@@ -95,6 +95,10 @@ body {
   line-height: 19px;
   color: #FFFFFF;
 }
+.catogories-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 .catogories-item-women {
   background-image: url("../img/for_women.jpg");
 }
@@ -175,6 +179,10 @@ body {
   position: relative;
   transition: 0.5s;
 }
+.product-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .overlay {
   position: absolute;
@@ -193,6 +201,7 @@ body {
 
 .product-item:hover .overlay {
   opacity: 1;
+  transition: 0.5s;
 }
 
 .product-btn {
@@ -210,10 +219,12 @@ body {
 .product-btn:hover {
   background-color: #FFFFFF;
   color: #000000;
+  transition: 0.5s;
 }
 
 .product-btn:hover .product-btn-icon {
   fill: #000000;
+  transition: 0.5s;
 }
 
 .product-btn-icon {
@@ -293,6 +304,7 @@ body {
 .product-link:hover {
   color: #FFFFFF;
   background-color: #F26376;
+  transition: 0.5s;
 }
 
 /* Преимущества */
@@ -311,6 +323,10 @@ body {
   height: 134px;
   margin: 133px 0;
 }
+.advantage-delivery:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .advantage-sales {
   background-image: url(../img/sales.svg);
@@ -319,6 +335,10 @@ body {
   height: 134px;
   margin: 133px 0;
 }
+.advantage-sales:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .advantage-quality {
   background-image: url(../img/quality.svg);
@@ -326,6 +346,10 @@ body {
   background-position: center top;
   height: 134px;
   margin: 133px 0;
+}
+.advantage-quality:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .advantage-header {
@@ -360,6 +384,10 @@ body {
 .woman-feedback {
   margin: 97px 0 126px;
 }
+.woman-feedback:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .feedback-photo {
   padding-left: 122px;
@@ -379,6 +407,10 @@ body {
   width: 557px;
   align-items: flex-end;
   padding-right: 0;
+}
+.feedback-form:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .subscribe {
@@ -464,6 +496,10 @@ body {
   margin: 24px 0;
   display: flex;
 }
+.socail:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .socail-link {
   color: #000000;
@@ -480,6 +516,7 @@ body {
 .socail-link:hover {
   color: #FFFFFF;
   background-color: #F16D7F;
+  transition: 0.5s;
 }
 
 /* Приветственная страница каталога*/
@@ -578,8 +615,16 @@ body {
   color: #6F6E6E;
   gap: 11px;
 }
+.filter-item-title-list:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 .filter-item[open] .filter-item-title {
   color: #EF5B70;
+}
+.filter-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .sort-button {
@@ -634,6 +679,15 @@ body {
   line-height: 19px;
   margin: 48px 0 96px;
 }
+.pages:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.page-item:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
 
 .page-link {
   text-decoration: none;
@@ -675,12 +729,26 @@ body {
   padding-bottom: 62px;
 }
 
+.carousel-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
 .carousel-control-prev {
   width: 47px;
   height: 47px;
   align-self: center;
   background: rgba(42, 42, 42, 0.15);
   border: none;
+}
+.carousel-control-prev:hover {
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
+
+.carousel-control-prev:hover .fas {
+  transition: 0.5s;
+  color: #F16D7F;
 }
 
 .carousel-control-next {
@@ -690,12 +758,18 @@ body {
   background: rgba(42, 42, 42, 0.15);
   border: none;
 }
+.carousel-control-next:hover {
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
+
+.carousel-control-next:hover .fas {
+  transition: 0.5s;
+  color: #F16D7F;
+}
 
 .fas {
   font-size: 17px;
-}
-.fas:hover {
-  color: #F16D7F;
 }
 
 /* Секция продукта на странице продукта */
@@ -705,6 +779,10 @@ body {
   border: 1px solid rgba(42, 42, 42, 0.15);
   background-color: #FFFFFF;
 }
+.wrap-product-block:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .product-block-women {
   display: flex;
@@ -712,6 +790,10 @@ body {
   align-items: center;
   flex-direction: column;
   margin-bottom: 12px;
+}
+.product-block-women:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .product-block-women-header {
@@ -731,6 +813,10 @@ body {
   text-align: center;
   margin: 0;
 }
+.product-block-header:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .product-block-center-text {
   display: flex;
@@ -747,6 +833,10 @@ body {
   margin-top: 48px;
   margin-bottom: 32px;
 }
+.product-block-text:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .product-block-cost {
   font-weight: 300;
@@ -755,10 +845,18 @@ body {
   color: #EF5B70;
   text-align: center;
 }
+.product-block-cost:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .product-block-sort {
   display: flex;
   justify-content: center;
+}
+.product-block-sort:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .sort-padding {
@@ -792,6 +890,7 @@ body {
 .product-btn-pink:hover {
   background-color: #F26376;
   color: #FFFFFF;
+  transition: 0.5s;
 }
 
 .product-btn-pink-icon {
@@ -801,4 +900,5 @@ body {
 
 .product-btn-pink:hover .product-btn-pink-icon {
   fill: #FFFFFF;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
