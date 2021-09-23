@@ -17,6 +17,7 @@ body {
   background-color: #222222;
   /* color: #fff; */
   padding: 18px 0;
+  position: relative;
 }
 
 .header-wrap {
@@ -30,6 +31,83 @@ body {
 
 .registration-link {
   margin: 0 33px;
+}
+
+.header button {
+  background-color: transparent;
+  border: none;
+}
+
+/* Навигация */
+.main-nav {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 162px;
+  padding: 35px;
+  background-color: #FFFFFF;
+  height: 694px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.main-nav-open {
+  display: block;
+}
+
+.main-nav-close {
+  display: none;
+}
+
+.main-nav-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.main-nav-close-btn {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  border: none;
+  transition: 0.5s;
+}
+.main-nav-close-btn:hover {
+  transform: rotate(360deg);
+}
+
+.main-nav-title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.main-nav-subtitle {
+  color: #F16D7F;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 12px;
+}
+
+.main-nav-list {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.main-nav-item {
+  margin-bottom: 11px;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #6F6E6E;
+  font-size: 14px;
+  line-height: 17px;
+}
+.main-nav-link:hover {
+  color: #000000;
+  text-decoration: underline;
 }
 
 /* Приветственная страница */
@@ -729,11 +807,6 @@ body {
   padding-bottom: 62px;
 }
 
-.carousel-item:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
 .carousel-control-prev {
   width: 47px;
   height: 47px;
@@ -901,4 +974,10 @@ body {
 .product-btn-pink:hover .product-btn-pink-icon {
   fill: #FFFFFF;
   transition: 0.5s;
+}
+
+/* Страница корзины */
+.cart-wrap {
+  margin-top: 96px;
+  margin-bottom: 128px;
 }/*# sourceMappingURL=style.css.map */
