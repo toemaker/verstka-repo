@@ -75,13 +75,61 @@
         </div>
     </section>
     <section class="product-cart">
-        <div class="wrap cart-wrap">
-            <div class="cart-products">
-                <div class="cart-products-item"></div>
-                <div class="cart-products-item"></div>
-                <div class="cart-products-btn"></div>
+        <div class="wrap">
+            <div class="cart-wrap">
+                <ul class="cart-products">
+                    <li class="cart-products-item">
+                        <img class="cart-products-item-img" src="img/cart-hoody.png" alt="hoody">
+                        <div class="cart-products-item-description">
+                            <button class="cart-products-item-close-btn"><img src="img/close-icon.svg"
+                                    alt="close"></button>
+                            <h2 class="cart-products-item-header">MANGO PEOPLE <br> T-SHIRT</h2>
+                            <p class="cart-products-item-text">Price: <span
+                                    class="cart-products-item-price-pink">$300</span>
+                            </p>
+                            <p class="cart-products-item-text">Color: Red</p>
+                            <p class="cart-products-item-text">Size: Xl</p>
+                            <p class="cart-products-item-text">Quantity:</p>
+                            <input type="number" class="item-number" max="10" min="1" value="1">
+                        </div>
+                    </li>
+                    <li class="cart-products-item">
+                        <img class="cart-products-item-img" src="img/cart-red-shirt.png" alt="red shirt">
+                        <div class="cart-products-item-description">
+                            <button class="cart-products-item-close-btn"><img src="img/close-icon.svg"
+                                    alt="close"></button>
+                            <h2 class="cart-products-item-header">MANGO PEOPLE <br> T-SHIRT</h2>
+                            <p class="cart-products-item-text">Price: <span
+                                    class="cart-products-item-price-pink">$300</span>
+                            </p>
+                            <p class="cart-products-item-text">Color: Red</p>
+                            <p class="cart-products-item-text">Size: Xl</p>
+                            <p class="cart-products-item-text">Quantity:</p>
+                            <input type="number" class="item-number" max="10" min="1" value="1">
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart-products-form">
+                    <form action="#" class="cart-form">
+                        <h2 class="cart-form-header">SHIPPING ADRESS</h2>
+                        <input class="cart-form-text" type="text" minlength="3" placeholder="Bangladesh" required>
+                        <input class="cart-form-text" type="text" minlength="3" placeholder="State" required>
+                        <input class="cart-form-text" type="text" minlength="3" placeholder="Postcode / Zip" required>
+                    </form>
+                    <button class="cart-form-btn">GET A QUOTE</button>
+                    <div class="cart-form-cost">
+                        <p class="cart-form-cost-sub">SUB TOTAL<span class="cart-form-cost-sub-padding">$900</span></p>
+                        <p class="cart-form-cost-grand">GRAND TOTAL<span
+                                class="cart-form-cost-grand-padding">$900</span>
+                        </p>
+                        <img class="cart-form-cost-line" src="img/grey-line.png" alt="grey-line">
+                        <button class="cart-form-cost-btn">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
             </div>
-            <div class="cart-form"></div>
+
+            <button class="cart-products-btn-left">CLEAR SHOPPING CART</button>
+            <button class="cart-products-btn-right">CONTINUE SHOPPING</button>
 
         </div>
     </section>

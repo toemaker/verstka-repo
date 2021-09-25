@@ -979,5 +979,227 @@ body {
 /* Страница корзины */
 .cart-wrap {
   margin-top: 96px;
+  margin-bottom: 89px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-products {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-products-item {
+  display: flex;
+  width: 652px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.cart-products-item-close-btn {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  border: none;
+  background-color: transparent;
+}
+.cart-products-item-close-btn:hover {
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
+
+.cart-products-item-img {
+  width: 262px;
+  height: 306px;
+  background-color: #F3EEEF;
+}
+
+.cart-products-item-description {
+  padding: 22px 97px 56px 31px;
+  position: relative;
+}
+
+.cart-products-item-header {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: normal;
+  color: #222222;
+  width: 262px;
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.cart-products-item-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.cart-products-item-price-pink {
+  color: #EF5B70;
+}
+
+.item-number {
+  width: 44px;
+  padding-left: 16px;
+  position: absolute;
+  bottom: 62px;
+  left: 153px;
+}
+
+.cart-products-form {
+  margin-left: 128px;
+}
+
+.cart-form-header {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 17px;
+  margin-bottom: 20px;
+}
+
+.cart-form-text {
+  width: 323px;
+  height: 16px;
+  color: #222222;
+  padding: 13px 17px 16px;
+  margin-bottom: 20px;
+  border: 2px solid #A4A4A4;
+}
+.cart-form-text::-moz-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.cart-form-text:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.cart-form-text::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.cart-form-btn {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  padding: 10px 14px 12px;
+  background-color: transparent;
+  border: 2px solid #A4A4A4;
+  margin-top: 3px;
+  transition: 0.5s;
+}
+.cart-form-btn:hover {
+  color: #ffffff;
+  background-color: #4A4A4A;
+}
+
+.cart-form-cost {
+  width: 360px;
+  background-color: #F5F3F3;
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-form-cost-sub {
+  margin: 39px 34px 12px 208px;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+.cart-form-cost-sub-padding {
+  padding-left: 27px;
+}
+
+.cart-form-cost-grand {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin: 0 37px 0 153px;
+}
+.cart-form-cost-grand-padding {
+  padding-left: 26px;
+  color: #F16D7F;
+  font-weight: bold;
+}
+
+.cart-form-cost-line {
+  margin-top: 21px;
+  margin-bottom: 17px;
+  justify-content: center;
+  align-self: center;
+  width: 275px;
+}
+
+.cart-form-cost-btn {
+  padding: 15px 43px 16px 41px;
+  background: #F16D7F;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border: none;
+  align-self: center;
+  transition: 0.5s;
+  margin-bottom: 42px;
+}
+.cart-form-cost-btn:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+}
+
+.cart-products-btn-left {
+  margin-right: 192px;
   margin-bottom: 128px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  text-align: center;
+  width: 235px;
+  background-color: transparent;
+  border: 2px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  transition: 0.5s;
+}
+.cart-products-btn-left:hover {
+  color: #ffffff;
+  background-color: #A4A4A4;
+}
+
+.cart-products-btn-right {
+  margin-right: 192px;
+  margin-bottom: 128px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  text-align: center;
+  width: 225px;
+  background-color: transparent;
+  border: 2px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  transition: 0.5s;
+}
+.cart-products-btn-right:hover {
+  color: #ffffff;
+  background-color: #A4A4A4;
 }/*# sourceMappingURL=style.css.map */
