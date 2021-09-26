@@ -70,18 +70,46 @@
     <section class="intro">
         <div class="wrap">
             <div class="intro-catalog-wrap">
-                <h1 class="itro-header">SHOPPING CART</h1>
+                <h1 class="itro-header">REGISTRATION</h1>
             </div>
         </div>
     </section>
-    <section class="product-cart">
-        <div class="wrap cart-wrap">
-            <div class="cart-products">
-                <div class="cart-products-item"></div>
-                <div class="cart-products-item"></div>
-                <div class="cart-products-btn"></div>
+    <section class="registration">
+        <div class="wrap registration-wrap">
+            <div class="registration-form">
+                <form action="#">
+                    <p class="registry-header">Your Name</p>
+                    <input class="registry-form-text" type="text" minlength="1" placeholder="First Name" required>
+                    <input class="registry-form-text" type="text" minlength="1" placeholder="Last Name" required>
+                    <input class="custom-radio" id="Male" type="radio" name="gender" value="Male">
+                    <label class="label-text" for="Male">Male</label>
+                    <input class="custom-radio" id="Female" type="radio" name="gender" value="Female">
+                    <label class="label-text custom-radio-margin" for="Female">Female</label>
+                    <p class="registry-pharagraph">Login details</p>
+                    <input class="registry-form-text" type="email" placeholder="Email" required>
+                    <input class="registry-form-text" type="password" placeholder="Password" minlength="8"
+                        pattern="[0-9]{1}[A-Za-z]{7,}" maxlength="20" required>
+                    <p class="password-description">Please use 8 or more characters, with at least 1 number and a
+                        mixture of uppercase and lowercase
+                        letters
+                    </p>
+                    <button class="submit-btn" type="submit" value="JOIN NOW">JOIN NOW<i
+                            class="fas fa-arrow-right"></i></button>
+                </form>
             </div>
-            <div class="cart-form"></div>
+            <div class="registration-advantages">
+                <h2 class="registration-advantages-header">LOYALTY HAS ITS PERKS</h2>
+                <p class="registration-advantages-pharagraph">Get in on the loyalty program where you can earn points
+                    and unlock serious perks. Starting with these
+                    as soon as you join:</p>
+                <ul class="registration-advantages-title">
+                    <li class="registration-advantages-list">15% off welcome offer</li>
+                    <li class="registration-advantages-list">Free shipping, returns and exchanges on all orders</li>
+                    <li class="registration-advantages-list">$10 off a purchase on your birthday</li>
+                    <li class="registration-advantages-list">Early access to products</li>
+                    <li class="registration-advantages-list">Exclusive offers & rewards</li>
+                </ul>
+            </div>
 
         </div>
     </section>
