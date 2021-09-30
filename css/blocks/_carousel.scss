@@ -1,0 +1,52 @@
+
+/* Карусель товаров */
+.carousel   {
+    background-color: #F7F7F7;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $shift;
+}
+
+.carousel-control-prev  {
+    width: 47px;
+    height: 47px;
+    align-self: center;
+    background: rgba(42, 42, 42, 0.15);
+    border: none;
+
+    &:hover {
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+}
+
+.carousel-control-prev:hover .fas {
+    transition: 0.5s;
+    color: #F16D7F;
+}
+
+.carousel-control-next  {
+    width: 47px;
+    height: 47px;
+    align-self: center;
+    background: rgba(42, 42, 42, 0.15);
+    border: none;
+
+    &:hover {
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+}
+
+.carousel-control-next:hover .fas {
+    transition: 0.5s;
+    color: #F16D7F;
+}
+
+
+.fas    {
+    font-size: 17px;
+}

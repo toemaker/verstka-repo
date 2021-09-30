@@ -1,0 +1,119 @@
+/* Фильтр каталога*/
+.product-menu   {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.filter {
+    width: 360px;
+    position: relative;
+    font-weight: 600;
+    @include textstd;
+
+    &-title {
+        display: block;
+        padding: 10px;
+    }
+
+    &-drop  {
+        padding-left: 10px;
+        position: absolute;
+        z-index: 10;
+        background-color: #FFFFFF;
+        width: 350px;
+    }
+
+    &[open] {
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter-title {
+        color: #EF5B70;
+    }
+
+}
+
+.filter-item    {
+    @include textstd;
+    color: #6F6E6E;
+
+    &-title  {
+        display: block;
+        padding: 10px;
+        border-left: 5px solid #EF5B70;
+        border-bottom: 1px solid #EBEBEB;
+    }
+
+    &-title-drop  {
+        z-index: 10;
+        background-color: #FFFFFF;
+        padding: 0 17px;
+        
+    }
+
+    &-title-list  {
+        list-style-type: none;
+        color: #6F6E6E;
+        gap: 11px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+
+    &[open] .filter-item-title {
+        color: #EF5B70;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+} 
+
+.sort-button    {
+    @include textstd;
+    color: #6F6E6E;
+    position: relative;
+
+    &-title {
+        display: block;
+        padding: 10px;
+    }
+
+    &[open] {
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+}
+
+.size-drop  {
+    z-index: 10;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    line-height: 16px;
+    position: absolute;
+    width: 100%;
+}
+
+.burger-pic {
+    padding-left: 11px;
+}
+
+.sort   {
+    @include textstd;
+    color: #6F6E6E;
+    display: flex;
+    margin-left: 30px;
+    padding-right: 28px;    
+}
+
+.sort-padding   {
+    padding-left: 28px;    
+}
+
+.sort-pic   {
+    padding-left: 10px;    
+}

@@ -1,0 +1,65 @@
+/* Преимущества */
+.advantsges {
+    background: #222224;
+
+    &-wrap   {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.advantage-delivery  {
+    background-image: url(../img/delivery.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 134px;
+    margin: 133px  0;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
+.advantage-sales    {
+    background-image: url(../img/sales.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 134px;
+    margin: 133px  0;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
+.advantage-quality {
+    background-image: url(../img/quality.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 134px;
+    margin: 133px  0;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
+.advantage-header   {
+    margin: 60px 0 16px;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+}
+
+.advantage-paragraph    {
+    font-weight: 300;
+    @include textstd;
+    text-align: center;
+    color: #FBFBFB;
+    width: 360px;
+    margin: 0;
+}

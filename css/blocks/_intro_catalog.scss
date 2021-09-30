@@ -1,0 +1,41 @@
+/* Приветственная страница каталога*/
+.intro-catalog-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itro-header    {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    margin: 60px 0;
+}
+
+.breadcrumb {
+    list-style: none;
+    text-decoration: none;
+    margin: 65px 0;
+}
+
+.breadcrumb-item-href   {
+    text-decoration: none;
+    color: #636363;
+}
+.breadcrumb-item    {
+    text-decoration: none;
+    font-weight: 300;
+    @include textstd;
+    color: #636363;
+    display: inline-block;
+
+    &::after {
+        content: " /";
+    }
+}
+
+.breadcrumb-item-active {
+    font-weight: bold;
+    @include textstd;
+    color: #F16D7F;
+    display: inline-block;
+}
