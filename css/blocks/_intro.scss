@@ -1,0 +1,41 @@
+/* Приветственная страница */
+.intro  {
+    background-color: #F1E4E6;
+}
+
+.intro-wrap {
+    background-image: url("../img/promo.png");
+    height: 764px;
+    background-repeat: no-repeat;
+    background-position: -227px bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.intro-title    {
+    color: #222222;
+    width: 405px;
+    border-left: 12px solid #F16D7F;
+    margin-right: 100px;
+    padding-left: 16px;
+}
+
+.intro-title-big    {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.intro-title-small  {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.intro-title-pink   {
+    color: #F16D7F;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+}
