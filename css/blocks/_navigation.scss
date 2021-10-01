@@ -12,6 +12,10 @@
 
 .main-nav-open  {
     display: block;
+
+    @media  (max-width: $tablet-breakpoint) {
+        display: none;
+    }
 }
 
 .main-nav-close  {

@@ -2,19 +2,9 @@
 
 @import "_mixins.scss";
 
-body   {
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-}
-
-/*Контейнер*/
-.wrap   {
-    width: 1140px;
-    margin: 0 auto;
-    outline: 1px solid red;
-    /* background-color: red; */
-}
-
+/* То, что применяетися ко всем страницам */
+@import "blocks/_main.scss";
+ 
 /* Шапка сайта */
 @import "blocks/_header.scss";
 

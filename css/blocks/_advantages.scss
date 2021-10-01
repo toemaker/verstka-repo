@@ -5,6 +5,10 @@
     &-wrap   {
         display: flex;
         justify-content: space-between;
+
+        @media  (max-width: $tablet-breakpoint) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -14,6 +18,10 @@
     background-position: center top;
     height: 134px;
     margin: 133px  0;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin: 48px  0;
+    }
 
     &:hover {
         transform: scale(1.1);
@@ -28,6 +36,10 @@
     height: 134px;
     margin: 133px  0;
 
+    @media  (max-width: $tablet-breakpoint) {
+        margin: 48px  0;
+    }
+
     &:hover {
         transform: scale(1.1);
         transition: 0.5s;
@@ -40,6 +52,10 @@
     background-position: center top;
     height: 134px;
     margin: 133px  0;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin: 48px 0 64px;
+    }
 
     &:hover {
         transform: scale(1.1);
@@ -62,4 +78,11 @@
     color: #FBFBFB;
     width: 360px;
     margin: 0;
+}
+
+.advantage-paragraph-center {
+    @media  (max-width: $tablet-breakpoint) {
+        display: flex;
+        justify-content: center;
+    }
 }

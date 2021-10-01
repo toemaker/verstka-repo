@@ -1,16 +1,29 @@
 /* Приветственная страница */
 .intro  {
     background-color: #F1E4E6;
+    min-height: 760px;
+}
+
+@media  (max-width: $tablet-breakpoint) {
+    .intro  {
+        min-height: 368px;
+    }
 }
 
 .intro-wrap {
     background-image: url("../img/promo.png");
-    height: 764px;
+    min-height: 764px;
     background-repeat: no-repeat;
     background-position: -227px bottom;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media  (max-width: $tablet-breakpoint) {
+        background-position: -107px bottom;
+        min-height: 368px;
+        background-size: contain;
+    }
 }
 
 .intro-title    {
@@ -19,12 +32,20 @@
     border-left: 12px solid #F16D7F;
     margin-right: 100px;
     padding-left: 16px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin-right: 0;
+    }
 }
 
 .intro-title-big    {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        font-size: 44px;
+    }
 }
 
 .intro-title-small  {

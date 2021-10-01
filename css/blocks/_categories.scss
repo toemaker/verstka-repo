@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 65px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin-top: 45px; 
+    }
 } 
 
 .catogories-item    {
@@ -18,6 +22,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    background-size: cover;
 
     &:hover {
         transform: scale(1.1);
@@ -40,6 +45,19 @@
         width: 100%;
         height: 180px;
         background-image: url("../img/accesories.jpg");
+
+    }
+
+    @media  (max-width: $tablet-breakpoint) {
+        width: 232px;
+        height: 167px;
+    }
+}
+
+@media  (max-width: $tablet-breakpoint) {
+    .catogories-item-acc    {
+        height: 116px;
+        width: 100%;
     }
 }
 
