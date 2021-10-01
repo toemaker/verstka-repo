@@ -380,7 +380,7 @@ body {
 }
 @media (max-width: 1200px) {
   .product-cards {
-    margin-top: 72px;
+    margin-top: 48px;
     gap: 16px;
   }
 }
@@ -870,6 +870,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 780px) {
+  .intro-catalog-wrap {
+    flex-direction: column;
+  }
+}
 
 .itro-header {
   font-size: 24px;
@@ -877,11 +882,31 @@ body {
   color: #F16D7F;
   margin: 60px 0;
 }
+@media (max-width: 780px) {
+  .itro-header {
+    margin-top: 24px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 780px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .breadcrumb {
   list-style: none;
   text-decoration: none;
   margin: 65px 0;
+}
+@media (max-width: 780px) {
+  .breadcrumb {
+    margin-top: 32px;
+    margin-bottom: 46px;
+  }
 }
 
 .breadcrumb-item-href {
@@ -932,6 +957,12 @@ body {
   display: block;
   padding: 10px;
 }
+@media (max-width: 780px) {
+  .filter-title {
+    width: 38px;
+    margin: 0;
+  }
+}
 .filter-drop {
   padding-left: 10px;
   position: absolute;
@@ -947,6 +978,13 @@ body {
 }
 .filter[open] .burger-pic {
   fill: #EF5B70;
+}
+
+@media (max-width: 780px) {
+  .filter-none {
+    display: none;
+    padding: 0;
+  }
 }
 
 .filter-item {
@@ -974,12 +1012,22 @@ body {
   transform: scale(1.1);
   transition: 0.5s;
 }
+@media (max-width: 780px) {
+  .filter-item-title-list:hover {
+    transform: scale(1);
+  }
+}
 .filter-item[open] .filter-item-title {
   color: #EF5B70;
 }
 .filter-item:hover {
   transform: scale(1.1);
   transition: 0.5s;
+}
+@media (max-width: 780px) {
+  .filter-item:hover {
+    transform: scale(1);
+  }
 }
 
 .sort-button {
@@ -994,6 +1042,13 @@ body {
 }
 .sort-button[open] {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+@media (max-width: 780px) {
+  .sort-button {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 23px;
+  }
 }
 
 .size-drop {
@@ -1010,6 +1065,12 @@ body {
   padding-left: 11px;
   fill: black;
 }
+@media (max-width: 780px) {
+  .burger-pic {
+    transform: scale(2.5);
+    padding-left: 0;
+  }
+}
 
 .sort {
   font-size: 14px;
@@ -1019,13 +1080,29 @@ body {
   margin-left: 30px;
   padding-right: 28px;
 }
-
-.sort-padding {
-  padding-left: 28px;
+@media (max-width: 1200px) {
+  .sort {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 780px) {
+  .sort {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .sort-pic {
   padding-left: 10px;
+}
+@media (max-width: 780px) {
+  .sort-pic {
+    padding-left: 9px;
+  }
 }
 
 /* Пагинация */

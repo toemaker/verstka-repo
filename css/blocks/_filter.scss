@@ -5,6 +5,7 @@
 
     @media  (max-width: $tablet-breakpoint) {
         margin-bottom: 0;
+        // justify-content: space-between;
     }
 }
 
@@ -17,6 +18,11 @@
     &-title {
         display: block;
         padding: 10px;
+
+        @media  (max-width: $phone-breakpoint) {
+            width: 38px;
+            margin: 0;
+        }
     }
 
     &-drop  {
@@ -39,6 +45,13 @@
         fill: #EF5B70;
     }
 
+}
+
+.filter-none    {
+    @media  (max-width: $phone-breakpoint) {
+        display: none;
+        padding: 0;
+    }
 }
 
 .filter-item    {
@@ -67,6 +80,10 @@
         &:hover {
             transform: scale(1.1);
             transition: 0.5s;
+
+                @media  (max-width: $phone-breakpoint) {
+                    transform: scale(1);
+                }
         }
     }
 
@@ -77,6 +94,11 @@
     &:hover {
         transform: scale(1.1);
         transition: 0.5s;
+
+            @media  (max-width: $phone-breakpoint) {
+                transform: scale(1);
+            }
+        
     }
 } 
 
@@ -94,6 +116,11 @@
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 
+    @media  (max-width: $phone-breakpoint) {
+        font-size: 12px;
+        line-height: 14px;
+        margin-left: 23px;
+    }
 }
 
 .size-drop  {
@@ -108,7 +135,13 @@
 
 .burger-pic {
     padding-left: 11px;
-    fill: black
+    fill: black;
+
+    @media  (max-width: $phone-breakpoint) {
+        transform: scale(2.5);
+        padding-left: 0;
+    }
+
 }
 
 
@@ -118,13 +151,26 @@
     color: #6F6E6E;
     display: flex;
     margin-left: 30px;
-    padding-right: 28px;    
-}
+    padding-right: 28px;
 
-.sort-padding   {
-    padding-left: 28px;    
+    @media  (max-width: $tablet-breakpoint) {
+        padding-right: 0px;
+    }
+    
+    @media  (max-width: $phone-breakpoint) {
+        font-size: 12px;
+        line-height: 14px;
+        margin-left: 0;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+    }
 }
 
 .sort-pic   {
     padding-left: 10px;    
+
+    @media  (max-width: $phone-breakpoint) {
+        padding-left: 9px;  
+    }    
 }
