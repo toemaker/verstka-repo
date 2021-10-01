@@ -24,6 +24,11 @@
         min-height: 368px;
         background-size: contain;
     }
+
+    @media  (max-width: $phone-breakpoint) {
+        background-image: none;
+        min-height: 363px;
+    }
 }
 
 .intro-title    {
@@ -36,6 +41,10 @@
     @media  (max-width: $tablet-breakpoint) {
         margin-right: 0;
     }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-left: 48px;
+    }
 }
 
 .intro-title-big    {
@@ -46,12 +55,22 @@
     @media  (max-width: $tablet-breakpoint) {
         font-size: 44px;
     }
+
+    @media  (max-width: $phone-breakpoint) {
+        font-size: 38px;
+        line-height: 46px;
+    }
 }
 
 .intro-title-small  {
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
+
+    @media  (max-width: $phone-breakpoint) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 .intro-title-pink   {
@@ -59,4 +78,10 @@
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
+
+    @media  (max-width: $phone-breakpoint) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
+

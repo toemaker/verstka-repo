@@ -3,6 +3,12 @@
     background-image: url(../img/feedback-back.jpg);
     height: 448px;
     
+    @media  (max-width: $tablet-breakpoint) {
+        height: 618px;
+        background-size: cover;
+    }
+
+    
     &-wrap  {
         height: 448px;
         display: flex;
@@ -10,6 +16,8 @@
 
         @media  (max-width: $tablet-breakpoint) {
             flex-direction: column;
+            height: 618px;
+            position: relative;
         }
 
         }
@@ -21,6 +29,12 @@
 
     @media  (max-width: $tablet-breakpoint) {
         margin: 64px 0 128px;
+
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-top: 64px;
+        margin-bottom: 59px;
     }
     
     &:hover {
@@ -51,6 +65,20 @@
     &:hover {
         transform: scale(1.1);
         transition: 0.5s;
+    }
+
+    @media  (max-width: $tablet-breakpoint) {
+        height: 137px;
+        position: absolute;
+        top: 390px;
+        margin-left: 89px;
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-left: 0;
+        top: 317px;
+        left: -100px;
+        height: 123px;
     }
 }
     
@@ -91,6 +119,10 @@
     color: #222224;
     margin: 0 auto;
     margin-top: 150px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin-top: 0;
+    }
 }
     
 .form-text  {

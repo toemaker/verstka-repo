@@ -4,6 +4,10 @@
     @media  (max-width: $tablet-breakpoint) {
         margin-top: 155px;
     }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-top: 64px; 
+    } 
 }
 
 .products-wrap-margin   {
@@ -64,7 +68,10 @@
 
     &:hover {
         transform: scale(1.1);
-        transition: 0.5s;
+
+        @media  (max-width: $phone-breakpoint) {
+            transform: none;
+        }         
     }
 }
 
@@ -194,6 +201,11 @@ display: block;
     @media  (max-width: $tablet-breakpoint) {
         margin-top: 32px;
         margin-bottom: 64px;
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-top: 40px;
+        margin-bottom: 96px;
     }
 
     &:hover {

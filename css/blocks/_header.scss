@@ -9,6 +9,10 @@
 .header-wrap    {
     display: flex;
     justify-content: space-between;
+
+    @media  (max-width: $phone-breakpoint) {
+        padding: 0 8px;
+    }
 }
 
 .logo-link  {
@@ -17,6 +21,16 @@
 
 .registration-link    {
     margin: 0 33px;
+
+    @media  (max-width: $phone-breakpoint) {
+        display: none;
+    }
+}
+
+.cart-link  {
+    @media  (max-width: $phone-breakpoint) {
+        display: none;
+    }
 }
 
 .header button  {

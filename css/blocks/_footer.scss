@@ -5,23 +5,34 @@
     &-wrap    {
         display: flex;
         justify-content: space-between;
+
+        @media  (max-width: $phone-breakpoint) {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
     }
 }
 
 .copy-text  {
-    margin: 30px    0;
+    margin: 30px  0;
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
+
+    @media  (max-width: $phone-breakpoint) {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 9px;
+    }
 }
 
 .socail  {
     margin: 24px    0;
     display: flex;
-
-    &:hover {
-        transform: scale(1.1);
-        transition: 0.5s;
+    
+    @media  (max-width: $phone-breakpoint) {
+        justify-content: center;
+        margin: 43px 0 40px;
     }
 }
 
@@ -36,11 +47,11 @@
     text-decoration: none;
     font-size: 20px;
     margin-left: 7px;
+    transition: 0.5s;
 
     &:hover    {
         color: #FFFFFF;
         background-color: #F16D7F;
-        transition: 0.5s;
     }
     
 }

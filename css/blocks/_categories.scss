@@ -9,6 +9,11 @@
     @media  (max-width: $tablet-breakpoint) {
         margin-top: 45px; 
     }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-top: 64px; 
+        gap: 32px;
+    } 
 } 
 
 .catogories-item    {
@@ -52,12 +57,19 @@
         width: 232px;
         height: 167px;
     }
+
+    @media  (max-width: $phone-breakpoint) {
+        width: 343px;
+        height: 247px;
+        margin-left: 8px;
+    } 
 }
 
 @media  (max-width: $tablet-breakpoint) {
     .catogories-item-acc    {
-        height: 116px;
+        height: 111px;
         width: 100%;
+        margin-left: 8px;
     }
 }
 
