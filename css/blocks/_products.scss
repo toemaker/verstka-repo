@@ -14,7 +14,11 @@
     margin-top: 0;
 }
 .products-catalog-wrap  {
-    margin-top: 51px;    
+    margin-top: 51px;  
+    
+    @media  (max-width: $tablet-breakpoint) {
+        margin-top: 24px;
+    }
 }
 
 .products-text  {
@@ -72,6 +76,12 @@
         @media  (max-width: $phone-breakpoint) {
             transform: none;
         }         
+    }
+}
+
+.product-item-none  {
+    @media  (max-width: $tablet-breakpoint) {
+        display: none;
     }
 }
 

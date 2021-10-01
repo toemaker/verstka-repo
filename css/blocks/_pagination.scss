@@ -5,6 +5,11 @@
     line-height: 19px;
     margin: 48px 0 96px;
 
+    @media  (max-width: $tablet-breakpoint) {
+        margin-top: 40px;
+        margin-bottom: 64px;
+    }
+
     &:hover {
         transform: scale(1.1);
         transition: 0.5s;
