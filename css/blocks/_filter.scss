@@ -5,7 +5,7 @@
 
     @media  (max-width: $tablet-breakpoint) {
         margin-bottom: 0;
-        // justify-content: space-between;
+         justify-content: space-between;
     }
 }
 
@@ -110,6 +110,11 @@
     &-title {
         display: block;
         padding: 10px;
+
+        @media  (max-width: $phone-breakpoint) {
+            display: flex;
+            padding: 10px 0;
+        }
     }
 
     &[open] {
@@ -120,6 +125,12 @@
         font-size: 12px;
         line-height: 14px;
         margin-left: 23px;
+    }
+}
+
+.sort-no-wrap   {
+    @media  (max-width: $phone-breakpoint) {
+        width: 96px;
     }
 }
 
@@ -161,9 +172,9 @@
         font-size: 12px;
         line-height: 14px;
         margin-left: 0;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        width: 100%;
+        // flex-wrap: nowrap;
+        // flex-direction: row;
+        width: 360px;
     }
 }
 

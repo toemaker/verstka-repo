@@ -1,6 +1,7 @@
 /* Отзывы */
 .feedback   {
     background-image: url(../img/feedback-back.jpg);
+    background-repeat: no-repeat;
     height: 448px;
     
     @media  (max-width: $tablet-breakpoint) {

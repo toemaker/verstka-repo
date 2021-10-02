@@ -652,6 +652,7 @@ body {
 /* Отзывы */
 .feedback {
   background-image: url(../img/feedback-back.jpg);
+  background-repeat: no-repeat;
   height: 448px;
 }
 @media (max-width: 1200px) {
@@ -943,6 +944,7 @@ body {
 @media (max-width: 1200px) {
   .product-menu {
     margin-bottom: 0;
+    justify-content: space-between;
   }
 }
 
@@ -1040,6 +1042,12 @@ body {
   display: block;
   padding: 10px;
 }
+@media (max-width: 780px) {
+  .sort-button-title {
+    display: flex;
+    padding: 10px 0;
+  }
+}
 .sort-button[open] {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -1048,6 +1056,12 @@ body {
     font-size: 12px;
     line-height: 14px;
     margin-left: 23px;
+  }
+}
+
+@media (max-width: 780px) {
+  .sort-no-wrap {
+    width: 96px;
   }
 }
 
@@ -1090,9 +1104,7 @@ body {
     font-size: 12px;
     line-height: 14px;
     margin-left: 0;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 100%;
+    width: 360px;
   }
 }
 
