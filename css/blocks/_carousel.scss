@@ -10,6 +10,16 @@
     padding-bottom: $shift;
 }
 
+.carousel-item-pic  {
+    @media  (max-width: $tablet-breakpoint) {
+        height: 565px;
+    }
+
+    @media  (max-width: $tablet-breakpoint) {
+        height: 454px;
+    }
+}
+
 .carousel-control-prev  {
     width: 47px;
     height: 47px;

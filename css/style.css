@@ -306,6 +306,7 @@ body {
     width: 343px;
     height: 247px;
     margin-left: 8px;
+    margin-right: 8px;
   }
 }
 
@@ -1046,6 +1047,8 @@ body {
   .sort-button-title {
     display: flex;
     padding: 10px 0;
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 .sort-button[open] {
@@ -1182,6 +1185,17 @@ body {
   padding-bottom: 62px;
 }
 
+@media (max-width: 1200px) {
+  .carousel-item-pic {
+    height: 565px;
+  }
+}
+@media (max-width: 1200px) {
+  .carousel-item-pic {
+    height: 454px;
+  }
+}
+
 .carousel-control-prev {
   width: 47px;
   height: 47px;
@@ -1228,9 +1242,17 @@ body {
   border: 1px solid rgba(42, 42, 42, 0.15);
   background-color: #FFFFFF;
 }
-.wrap-product-block:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
+@media (max-width: 1200px) {
+  .wrap-product-block {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .products-wrap-margin {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
 }
 
 .product-block-women {
@@ -1271,6 +1293,12 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 780px) {
+  .product-block-center-text {
+    width: 326px;
+    margin-left: 15px;
+  }
+}
 
 .product-block-text {
   font-weight: 300;
@@ -1299,13 +1327,38 @@ body {
   transition: 0.5s;
 }
 
+.grey-line {
+  display: flex;
+  justify-content: center;
+  width: 642px;
+  margin-bottom: 64px;
+  margin-top: 64px;
+}
+@media (max-width: 1200px) {
+  .grey-line {
+    margin: 64px 44px;
+  }
+}
+@media (max-width: 780px) {
+  .grey-line {
+    margin: 32px 92px 49px;
+    width: 175px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .line {
+    width: 175px;
+  }
+}
+
 .product-block-sort {
   display: flex;
   justify-content: center;
+  transition: 0.5s;
 }
 .product-block-sort:hover {
   transform: scale(1.1);
-  transition: 0.5s;
 }
 
 .sort-padding {
@@ -1316,6 +1369,11 @@ body {
 
 .product-item-margin-top-bottom {
   margin: 128px 0;
+}
+@media (max-width: 780px) {
+  .product-item-margin-top-bottom {
+    margin: 0;
+  }
 }
 
 .product-block-link-center {
