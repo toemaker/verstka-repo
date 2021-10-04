@@ -151,7 +151,7 @@ body {
 /* Приветственная страница */
 /* Приветственная страница */
 .intro {
-  background-color: #F1E4E6;
+  background-color: #F8F3F4;
   min-height: 760px;
 }
 
@@ -1333,6 +1333,7 @@ body {
   width: 642px;
   margin-bottom: 64px;
   margin-top: 64px;
+  margin-left: 228px;
 }
 @media (max-width: 1200px) {
   .grey-line {
@@ -1414,9 +1415,19 @@ body {
 /* Страница корзины */
 .cart-wrap {
   margin-top: 96px;
-  margin-bottom: 89px;
+  margin-bottom: 128px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .cart-wrap {
+    margin-top: 59px;
+    flex-direction: column;
+  }
+}
+
+.cart-product-btn {
+  display: flex;
 }
 
 .cart-products {
@@ -1432,6 +1443,11 @@ body {
   margin-bottom: 40px;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .cart-products-item {
+    width: 734px;
+  }
+}
 
 .cart-products-item-close-btn {
   position: absolute;
@@ -1439,6 +1455,11 @@ body {
   right: 22px;
   border: none;
   background-color: transparent;
+}
+@media (max-width: 1200px) {
+  .cart-products-item-close-btn {
+    right: -60px;
+  }
 }
 .cart-products-item-close-btn:hover {
   transform: rotate(360deg);
@@ -1488,6 +1509,12 @@ body {
 
 .cart-products-form {
   margin-left: 128px;
+}
+@media (max-width: 1200px) {
+  .cart-products-form {
+    display: flex;
+    margin-left: 0;
+  }
 }
 
 .cart-form-header {
@@ -1544,6 +1571,7 @@ body {
 
 .cart-form-cost {
   width: 360px;
+  height: 214px;
   background-color: #F5F3F3;
   margin-top: 57px;
   display: flex;
@@ -1556,6 +1584,14 @@ body {
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
+}
+@media (max-width: 1200px) {
+  .cart-form-cost-sub {
+    margin: 39px 34px 12px 218px;
+    display: block;
+    white-space: nowrap;
+    width: 108px;
+  }
 }
 .cart-form-cost-sub-padding {
   padding-left: 27px;
@@ -1594,14 +1630,28 @@ body {
   transition: 0.5s;
   margin-bottom: 42px;
 }
+@media (max-width: 1200px) {
+  .cart-form-cost-btn {
+    margin-bottom: 42px;
+  }
+}
 .cart-form-cost-btn:hover {
   background-color: #FFFFFF;
   color: #F16D7F;
 }
 
+.cart-product-btn {
+  margin-top: 32px;
+}
+@media (max-width: 1200px) {
+  .cart-product-btn {
+    width: 508px;
+    margin: 62px 130px 64px 130px;
+  }
+}
+
 .cart-products-btn-left {
   margin-right: 192px;
-  margin-bottom: 128px;
   padding-top: 17px;
   padding-bottom: 16px;
   text-align: center;
@@ -1614,14 +1664,17 @@ body {
   color: #000000;
   transition: 0.5s;
 }
+@media (max-width: 1200px) {
+  .cart-products-btn-left {
+    margin-right: 48px;
+  }
+}
 .cart-products-btn-left:hover {
   color: #ffffff;
   background-color: #A4A4A4;
 }
 
 .cart-products-btn-right {
-  margin-right: 192px;
-  margin-bottom: 128px;
   padding-top: 17px;
   padding-bottom: 16px;
   text-align: center;
