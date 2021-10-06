@@ -1802,6 +1802,11 @@ body {
   width: 360px;
   margin-top: 64px;
 }
+@media (max-width: 1200px) {
+  .registration-form {
+    margin-top: 40px;
+  }
+}
 
 .registry-header {
   font-weight: 300;
@@ -1843,6 +1848,15 @@ body {
   z-index: -1;
   opacity: 0;
   margin-right: 10px;
+}
+
+.radio-other {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .radio-other {
+    display: inline;
+  }
 }
 
 /* для элемента label связанного с .custom-radio */
@@ -1923,6 +1937,11 @@ body {
   line-height: 19px;
   color: #222222;
 }
+@media (max-width: 1200px) {
+  .registry-pharagraph {
+    margin-bottom: 15px;
+  }
+}
 
 .password-description {
   margin-bottom: 39px;
@@ -1941,6 +1960,11 @@ body {
   line-height: 17px;
   margin-bottom: 120px;
   transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .submit-btn {
+    margin-bottom: 96px;
+  }
 }
 .submit-btn:hover {
   background-color: #FFFFFF;
@@ -1962,6 +1986,12 @@ body {
   margin-left: 128px;
   margin-top: 64px;
 }
+@media (max-width: 1200px) {
+  .registration-advantages {
+    margin-left: 22px;
+    margin-top: 40px;
+  }
+}
 
 .registration-advantages-header {
   font-weight: 300;
@@ -1970,6 +2000,13 @@ body {
   color: #000000;
   margin: 0;
   transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .registration-advantages-header {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 .registration-advantages-header:hover {
   transform: scale(1.1);
@@ -1984,6 +2021,15 @@ body {
   margin-bottom: 21px;
   transition: 0.5s;
 }
+@media (max-width: 1200px) {
+  .registration-advantages-pharagraph {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 22px;
+    margin-top: 32px;
+  }
+}
 .registration-advantages-pharagraph:hover {
   transform: scale(1.1);
 }
@@ -1997,11 +2043,23 @@ body {
   line-height: 29px;
   color: #000000;
 }
+@media (max-width: 1200px) {
+  .registration-advantages-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 
 .registration-advantages-list {
   margin-bottom: 16px;
   margin-top: 0;
   transition: 0.5s;
+}
+@media (max-width: 1200px) {
+  .registration-advantages-list {
+    margin-top: 21px;
+  }
 }
 .registration-advantages-list:hover {
   transform: scale(1.1);
