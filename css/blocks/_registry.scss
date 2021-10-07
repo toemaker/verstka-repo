@@ -1,0 +1,282 @@
+/* Страница регистрации */
+.registration-wrap  {
+  display: flex; 
+
+  @media  (max-width: $phone-breakpoint) {
+    flex-direction: column;
+  }  
+}
+
+.itro-registry-wrap {
+  @media  (max-width: $phone-breakpoint) {
+    margin: 60px;
+  }
+}
+
+.registration-form  {
+  width: 360px;
+  margin-top: 64px;
+
+  @media  (max-width: $tablet-breakpoint) {
+    margin-top: 40px;
+  }
+}
+
+.registry-header    {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.registry-form-text {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border: 1px solid #A4A4A4;
+  width: 324px;
+  padding: 13px 17px 16px;
+
+  &::placeholder   {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+  }
+}
+
+.custom-radio   {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin-right: 10px;
+}
+
+.radio-other  {
+  display: none;
+
+  @media  (max-width: $tablet-breakpoint) {
+    display: inline;
+  }
+
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+  
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #F16D7F;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active+label::before {
+  background-color: #F16D7F;
+  border-color: #F26376;
+}
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus+label::before {
+  box-shadow: 0 0 0 0.2rem #F26376;
+}
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio:focus:not(:checked)+label::before {
+  border-color: #F16D7F;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked+label::before {
+  border-color: #F16D7F;
+  background-color: #F26376;
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled+label::before {
+  background-color: #e9ecef;
+}
+  
+.custom-radio-margin  {
+  margin-left: 20px;
+  margin-top: 11px;
+}
+
+.label-text    {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px; 
+  color: #000000;
+}
+
+.registry-pharagraph   {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+
+  @media  (max-width: $tablet-breakpoint) {
+    margin-bottom: 15px;
+  }
+}
+
+.password-description  {
+  margin-bottom: 39px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.submit-btn    {
+  padding: 16px 24px 17px 29px;
+  background-color: #F16D7F;
+  border: 1px solid #F16D7F;
+  color: #FFFFFF;
+  @include textstd;
+  margin-bottom: 120px;
+  transition: 0.5s;
+
+  @media  (max-width: $tablet-breakpoint) {
+    margin-bottom: 96px;
+  }
+
+  @media  (max-width: $phone-breakpoint) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
+  }
+}
+
+.fa-arrow-right    {
+  margin-left: 20px;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+ 
+.submit-btn:hover .fa-arrow-right  {
+  color: #F16D7F;
+}
+
+.registration-advantages    {
+  margin-left: 128px;
+  margin-top: 64px;
+
+  @media  (max-width: $tablet-breakpoint) {
+    margin-left: 22px;
+    margin-top: 40px;
+  }
+
+  @media  (max-width: $phone-breakpoint) {
+    margin-left: 0;
+  }
+}
+
+.registration-advantages-header {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: 0;
+  transition: 0.5s;
+
+  @media  (max-width: $tablet-breakpoint) {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    @media  (max-width: $phone-breakpoint) {
+      transform: scale(1);
+    }
+  }
+}
+
+.registration-advantages-pharagraph {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 22px;
+  margin-bottom: 21px;
+  transition: 0.5s;
+
+  @media  (max-width: $tablet-breakpoint) {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 22px;
+    margin-top: 32px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    @media  (max-width: $phone-breakpoint) {
+      transform: scale(1);
+    }
+  }
+}
+
+.registration-advantages-title  {
+  list-style-image: url(../img/list-style.svg);
+  margin: 0;
+  padding-left: 20px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+
+  @media  (max-width: $tablet-breakpoint) {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media  (max-width: $phone-breakpoint) {
+    margin-bottom: 96px;
+  }
+}
+
+.registration-advantages-list   {
+  margin-bottom: 16px;
+  margin-top: 0;
+  transition: 0.5s;
+
+  @media  (max-width: $tablet-breakpoint) {
+    margin-top: 21px;
+  }
+
+  @media  (max-width: $phone-breakpoint) {
+    margin-left: 23px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    @media  (max-width: $phone-breakpoint) {
+      transform: scale(1);
+    }
+  }
+}

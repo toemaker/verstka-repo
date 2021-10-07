@@ -1,0 +1,82 @@
+/* категории тоаваров */
+.catogories-wrap    {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 65px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin-top: 45px; 
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-top: 64px; 
+        gap: 32px;
+    } 
+} 
+
+.catogories-item    {
+    width: 360px;
+    height: 260px;
+    background: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-size: cover;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    &-women  {
+        background-image: url("../img/for_women.jpg");
+    }
+
+    &-men  {
+        background-image: url("../img/for_men.jpg");
+    }
+
+    &-kids  {
+        background-image: url("../img/for_kids.jpg");
+    }
+
+    &-acc    {
+        width: 100%;
+        height: 180px;
+        background-image: url("../img/accesories.jpg");
+
+    }
+
+    @media  (max-width: $tablet-breakpoint) {
+        width: 232px;
+        height: 167px;
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        width: 343px;
+        height: 247px;
+        margin-left: 8px;
+        margin-right: 8px;
+    } 
+}
+
+@media  (max-width: $tablet-breakpoint) {
+    .catogories-item-acc    {
+        height: 111px;
+        width: 100%;
+        margin-left: 8px;
+    }
+}
+
+.item-pink  {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}

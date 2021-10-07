@@ -1,0 +1,136 @@
+/* Отзывы */
+.feedback   {
+    background-image: url(../img/feedback-back.jpg);
+    background-repeat: no-repeat;
+    height: 448px;
+    background-size: cover;
+    
+    @media  (max-width: $tablet-breakpoint) {
+        height: 618px;
+        background-size: cover;
+    }
+
+    
+    &-wrap  {
+        height: 448px;
+        display: flex;
+        justify-content: space-between;
+
+        @media  (max-width: $tablet-breakpoint) {
+            flex-direction: column;
+            height: 618px;
+            position: relative;
+        }
+    }
+    
+}
+    
+.woman-feedback {
+    margin: 97px 0 126px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin: 64px 0 128px;
+
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-top: 64px;
+        margin-bottom: 59px;
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+    
+.feedback-photo-center  {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.feedback-paragraph {
+    width: 360px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin: 0 auto;
+}
+    
+.feedback-form  {
+    width: 557px;  
+    align-items: flex-end; 
+    padding-right: 0;
+    
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    @media  (max-width: $tablet-breakpoint) {
+        height: 137px;
+        position: absolute;
+        top: 390px;
+        margin-left: 89px;
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-left: 0;
+        top: 317px;
+        left: -100px;
+        height: 123px;
+    }
+}
+    
+.subscribe {
+    display: flex;
+    margin-top: 32px;
+    justify-content: center;
+}
+    
+.subscribe-field {
+    padding: 20px;
+    background-color: lightgrey;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+    
+.subscribe-field::placeholder {
+    color: #222224;
+    @include textstd;
+    opacity: 0.67;
+}
+    
+.subscribe-btn {
+    padding: 20px;
+    background-color: #F16D7F;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #FFFFFF;
+    @include textstd;
+}
+    
+.form-header    {
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    margin: 0 auto;
+    margin-top: 150px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin-top: 0;
+    }
+}
+    
+.form-text  {
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    margin: 0 auto;
+}
+    

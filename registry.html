@@ -27,7 +27,7 @@
                     <button><img src="img/list-icon.svg" alt="menu"></button>
                     <a href="registry.html" class="registration-link"><img src="img/registration-icon.svg"
                             alt="registration"></a>
-                    <a href="cart.html"><img src="img/cart-icon.png" alt="cart"></a>
+                    <a href="cart.html" class="cart-link"><img src="img/cart-icon.png" alt="cart"></a>
                 </div>
                 <nav class="main-nav main-nav-close">
                     <!--  main-nav-open / main-nav-close -->
@@ -67,28 +67,61 @@
         </div>
 
     </header>
-    <section class="intro">
+    <section class="intro-catalog">
         <div class="wrap">
             <div class="intro-catalog-wrap">
-                <h1 class="itro-header">SHOPPING CART</h1>
+                <h1 class="itro-header itro-registry-wrap">REGISTRATION</h1>
             </div>
         </div>
     </section>
-    <section class="product-cart">
-        <div class="wrap cart-wrap">
-            <div class="cart-products">
-                <div class="cart-products-item"></div>
-                <div class="cart-products-item"></div>
-                <div class="cart-products-btn"></div>
+    <section class="registration">
+        <div class="wrap registration-wrap">
+            <div class="registration-form">
+                <form action="#">
+                    <p class="registry-header">Your Name</p>
+                    <input class="registry-form-text" type="text" minlength="1" placeholder="First Name" required>
+                    <input class="registry-form-text" type="text" minlength="1" placeholder="Last Name" required>
+                    <input class="custom-radio" id="Male" type="radio" name="gender" value="Male">
+                    <label class="label-text" for="Male">Male</label>
+                    <input class="custom-radio" id="Female" type="radio" name="gender" value="Female">
+                    <label class="label-text custom-radio-margin" for="Female">Female</label>
+                    <div class="radio-other">
+                        <input class="custom-radio" id="Other" type="radio" name="gender" value="Other">
+                        <label class="label-text custom-radio-margin" for="Other">Other</label>
+                    </div>
+                    <p class="registry-pharagraph">Login details</p>
+                    <input class="registry-form-text" type="email" placeholder="Email" required>
+                    <input class="registry-form-text" type="password" placeholder="Password" minlength="8"
+                        pattern="[0-9]{1}[A-Za-z]{7,}" maxlength="20" required>
+                    <p class="password-description">Please use 8 or more characters, with at least 1 number and a
+                        mixture of uppercase and lowercase
+                        letters
+                    </p>
+                    <button class="submit-btn" type="submit" value="JOIN NOW">JOIN NOW<i
+                            class="fas fa-arrow-right"></i></button>
+                </form>
             </div>
-            <div class="cart-form"></div>
+            <div class="registration-advantages">
+                <h2 class="registration-advantages-header">LOYALTY HAS ITS PERKS</h2>
+                <p class="registration-advantages-pharagraph">Get in on the loyalty program where you can earn points
+                    and unlock serious perks. Starting with these
+                    as soon as you join:</p>
+                <ul class="registration-advantages-title">
+                    <li class="registration-advantages-list">15% off welcome offer</li>
+                    <li class="registration-advantages-list">Free shipping, returns and exchanges on all orders</li>
+                    <li class="registration-advantages-list">$10 off a purchase on your birthday</li>
+                    <li class="registration-advantages-list">Early access to products</li>
+                    <li class="registration-advantages-list">Exclusive offers & rewards</li>
+                </ul>
+            </div>
 
         </div>
     </section>
     <section class="feedback">
         <div class="wrap feedback-wrap">
             <div class="woman-feedback">
-                <img src="img/photo-feedback.png" alt="photo" class="feedback-photo">
+                <div class="feedback-photo-center"><img src="img/photo-feedback.png" alt="photo" class="feedback-photo">
+                </div>
                 <p class="feedback-paragraph">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
                     condimentum“</p>
             </div>
