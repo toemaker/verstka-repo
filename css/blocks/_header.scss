@@ -1,0 +1,39 @@
+/* Шапка сайта */
+.header {
+    background-color: #222222;
+    /* color: #fff; */
+    padding: 18px   0;
+    position: relative;
+}
+
+.header-wrap    {
+    display: flex;
+    justify-content: space-between;
+
+    @media  (max-width: $phone-breakpoint) {
+        padding: 0 8px;
+    }
+}
+
+.logo-link  {
+    margin-right: 41px;
+}
+
+.registration-link    {
+    margin: 0 33px;
+
+    @media  (max-width: $phone-breakpoint) {
+        display: none;
+    }
+}
+
+.cart-link  {
+    @media  (max-width: $phone-breakpoint) {
+        display: none;
+    }
+}
+
+.header button  {
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,30 @@
+body   {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/*Контейнер*/
+.wrap   {
+    max-width: 1140px;
+    margin: 0 auto;
+    // outline: 1px solid red;
+    /* background-color: red; */
+}
+ 
+@media  (max-width: $tablet-breakpoint) {
+    .wrap   {
+        width: 736px;
+        padding-right: 16px;
+        padding-left: 16px;
+        // outline: 1px solid red;
+    }
+}
+
+@media  (max-width: $phone-breakpoint) {
+    .wrap   {
+        width: 359px;
+        padding: 0;
+        // outline: 1px solid blue;
+    }
+}

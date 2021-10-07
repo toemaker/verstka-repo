@@ -1,0 +1,51 @@
+@import "_var.scss";
+
+@import "_mixins.scss";
+
+/* То, что применяетися ко всем страницам */
+@import "blocks/_main.scss";
+ 
+/* Шапка сайта */
+@import "blocks/_header.scss";
+
+/* Навигация */
+@import "blocks/_navigation.scss";
+
+/* Приветственная страница */
+@import "blocks/_intro.scss";
+
+/* категории тоаваров */
+@import "blocks/_categories.scss";
+
+/* Карточки товаров */
+@import "blocks/_products.scss";
+
+/* Преимущества */
+@import "blocks/_advantages.scss";
+
+/* Отзывы */
+@import "blocks/_feedback.scss";
+
+/* Подвал сайта */
+@import "blocks/_footer.scss";
+
+/* Приветственная страница каталога*/
+@import "blocks/_intro_catalog.scss";
+
+/* Фильтр каталога*/
+@import "blocks/_filter.scss";
+
+/* Пагинация */
+@import "blocks/_pagination.scss";
+
+/* Карусель товаров */
+@import "blocks/_carousel.scss";
+
+/* Секция продукта на странице продукта */
+@import "blocks/_product_page.scss";
+
+/* Страница корзины */
+@import "blocks/_cart.scss";
+
+/* Страница регистрации */
+@import "blocks/_registry.scss";

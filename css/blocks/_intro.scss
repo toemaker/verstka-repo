@@ -1,0 +1,89 @@
+/* Приветственная страница */
+.intro  {
+    background-color: #F8F3F4;
+    ;
+    min-height: 760px;
+}
+
+
+@media  (max-width: $tablet-breakpoint) {
+    .intro  {
+        min-height: 368px;
+    }
+}
+
+.intro-wrap {
+    background-image: url("../img/promo.png");
+    min-height: 764px;
+    background-repeat: no-repeat;
+    background-position: -227px bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media  (max-width: $tablet-breakpoint) {
+        background-position: -107px bottom;
+        min-height: 368px;
+        background-size: contain;
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        background-image: none;
+        min-height: 363px;
+    }
+}
+
+.intro-title    {
+    color: #222222;
+    width: 405px;
+    border-left: 12px solid #F16D7F;
+    margin-right: 100px;
+    padding-left: 16px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        margin-right: 0;
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        margin-left: 48px;
+    }
+}
+
+.intro-title-big    {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+
+    @media  (max-width: $tablet-breakpoint) {
+        font-size: 44px;
+    }
+
+    @media  (max-width: $phone-breakpoint) {
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+
+.intro-title-small  {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+
+    @media  (max-width: $phone-breakpoint) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.intro-title-pink   {
+    color: #F16D7F;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+
+    @media  (max-width: $phone-breakpoint) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
