@@ -1,6 +1,16 @@
 /* Страница регистрации */
 .registration-wrap  {
   display: flex; 
+
+  @media  (max-width: $phone-breakpoint) {
+    flex-direction: column;
+  }  
+}
+
+.itro-registry-wrap {
+  @media  (max-width: $phone-breakpoint) {
+    margin: 60px;
+  }
 }
 
 .registration-form  {
@@ -148,6 +158,10 @@
     margin-bottom: 96px;
   }
 
+  @media  (max-width: $phone-breakpoint) {
+    margin-bottom: 0;
+  }
+
   &:hover {
     background-color: #FFFFFF;
     color: #F16D7F;
@@ -173,6 +187,10 @@
     margin-left: 22px;
     margin-top: 40px;
   }
+
+  @media  (max-width: $phone-breakpoint) {
+    margin-left: 0;
+  }
 }
 
 .registration-advantages-header {
@@ -191,6 +209,9 @@
 
   &:hover {
     transform: scale(1.1);
+    @media  (max-width: $phone-breakpoint) {
+      transform: scale(1);
+    }
   }
 }
 
@@ -213,6 +234,9 @@
 
   &:hover {
     transform: scale(1.1);
+    @media  (max-width: $phone-breakpoint) {
+      transform: scale(1);
+    }
   }
 }
 
@@ -230,6 +254,10 @@
     font-size: 16px;
     line-height: 19px;
   }
+
+  @media  (max-width: $phone-breakpoint) {
+    margin-bottom: 96px;
+  }
 }
 
 .registration-advantages-list   {
@@ -241,7 +269,14 @@
     margin-top: 21px;
   }
 
+  @media  (max-width: $phone-breakpoint) {
+    margin-left: 23px;
+  }
+
   &:hover {
     transform: scale(1.1);
+    @media  (max-width: $phone-breakpoint) {
+      transform: scale(1);
+    }
   }
 }
