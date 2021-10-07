@@ -3,6 +3,7 @@
     background-image: url(../img/feedback-back.jpg);
     background-repeat: no-repeat;
     height: 448px;
+    background-size: cover;
     
     @media  (max-width: $tablet-breakpoint) {
         height: 618px;
@@ -20,8 +21,7 @@
             height: 618px;
             position: relative;
         }
-
-        }
+    }
     
 }
     

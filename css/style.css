@@ -3,6 +3,10 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*Контейнер*/
@@ -653,6 +657,7 @@ body {
   background-image: url(../img/feedback-back.jpg);
   background-repeat: no-repeat;
   height: 448px;
+  background-size: cover;
 }
 @media (max-width: 1200px) {
   .feedback {
